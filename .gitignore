@@ -1,0 +1,19 @@
+# Hugo default output directory
+public/
+resources/
+node_modules/
+
+*.swp
+*.swo
+*.sh
+package-lock.json
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
