@@ -28,7 +28,6 @@ DefaultContentLanguage           = "en"                     # Default language f
     [params.share]
         twitter                  = true
         facebook                 = true
-        googlePlus               = true
         pinterest                = true
 
     # Social icons appear in introduction and contact section. Add as many more as you like.
@@ -50,17 +49,6 @@ DefaultContentLanguage           = "en"                     # Default language f
         url = "mailto:scottkirk@scottkirk.dev"
         icon = "paper-plane"
         icon_pack = "fas"
-
-
-# If you don't want to use the default menu, you can define one by yourself
-# [[menu.main]]
-#     name    = "Home"
-#     url     = "/"
-#     weight  = 0
-# [[menu.main]]
-#     name    = "Blog"
-#     url     = "/blog/"
-#     weight  = 1
 
 # We only use tag as a taxonomies
 # You can add more by yourself
