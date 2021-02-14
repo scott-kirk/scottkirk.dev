@@ -2,7 +2,7 @@
 title: "Simla"
 weight: 3
 resources:
-    - src: sfml.png
+    - src: Rust.png
       params:
           weight: -100
 ---
