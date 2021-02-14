@@ -15,7 +15,7 @@ away to remediate anything during our 24/7 operations.
 
 ### Skills
 
-* [Java](https://www.geeksforgeeks.org/java/), [Go](https://golang.org/), [Git](https://git-scm.com/), [Bash](https://www.gnu.org/software/bash/), [Python](https://www.python.org/), [C++](http://www.cplusplus.com/info/description/)
+* [Java](https://www.geeksforgeeks.org/java/), [Go](https://golang.org/), [Git](https://git-scm.com/), [Rust](https://www.rust-lang.org/), [Bash](https://www.gnu.org/software/bash/), [Python](https://www.python.org/), [C++](http://www.cplusplus.com/info/description/)
 * [GitLab](https://about.gitlab.com/), [GitHub](https://github.com/), [Jenkins](https://jenkins.io/)
 * [Kubernetes](https://kubernetes.io/), [Kafka](https://kafka.apache.org/), [ZooKeeper](https://zookeeper.apache.org/), [Prometheus](https://prometheus.io/)
 * [Netty](https://netty.io/), [Spock](http://spockframework.org/), [Guava](https://opensource.google/projects/guava), [Dagger2](https://dagger.dev/)
