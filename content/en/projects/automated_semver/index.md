@@ -13,5 +13,5 @@ to leverage both GitLab's [CI/CD](https://docs.gitlab.com/ee/ci/) and also get e
 One of the cool things about this project is that it functions as a sort of [quine](https://en.wikipedia.org/wiki/Quine_(computing)),
 where the project versions itself as well. I was able to get this project to a 1.0.0 version and the image of the executable can be found on
 [DockerHub](https://hub.docker.com/r/skirkr/automated-semver). I also wrote a blog post detailing how this project can be used to
-automate the versioning of other repositories, which can be found [here]({{< relref "blog/gitlab-releases" >}}), with a more detailed how-to
+automate the versioning of other repositories, which can be found [here]({{< ref "blog/gitlab-releases/gitlab-releases.md" >}}), with a more detailed how-to
 in the README of the repository on [GitLab](https://gitlab.com/scott-kirk/automated-semver).
