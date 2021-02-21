@@ -7,7 +7,7 @@
             <div class="owl-carousel owl-theme">
             {{ end }}
                 {{ range sort . "Params.weight" }}
-                    {{ $image := .Resize "500x" }}
+                    {{ $image := .Resize "200x" }}
                     {{ if $moreThanOneImage }}
                     <div class="item owl-height">
                     {{ end }}
