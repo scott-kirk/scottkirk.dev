@@ -19,4 +19,5 @@ away to remediate anything during our 24/7 operations.
 * [GitLab](https://about.gitlab.com/), [GitHub](https://github.com/), [Jenkins](https://jenkins.io/)
 * [Kubernetes](https://kubernetes.io/), [Kafka](https://kafka.apache.org/), [ZooKeeper](https://zookeeper.apache.org/), [Prometheus](https://prometheus.io/)
 * [Netty](https://netty.io/), [Spock](http://spockframework.org/), [Guava](https://opensource.google/projects/guava), [Dagger2](https://dagger.dev/)
-* [Certified Kubernetes Application Developer](https://www.youracclaim.com/badges/1fe71f91-3917-4ee3-b3f0-51c60a5a6c66)
+* [Certified Kubernetes Application Developer](https://www.youracclaim.com/badges/1fe71f91-3917-4ee3-b3f0-51c60a5a6c66),
+[Confluent Certified Developer for Kafka](https://www.credential.net/23808d81-a517-462b-a0ca-7a8a732373ae)
