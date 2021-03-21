@@ -15,8 +15,8 @@ away to remediate anything during our 24/7 operations.
 
 ### Skills
 
-* [Java](https://www.geeksforgeeks.org/java/), [Go](https://golang.org/), [Git](https://git-scm.com/), [Rust](https://www.rust-lang.org/), [Bash](https://www.gnu.org/software/bash/), [Python](https://www.python.org/), [C++](http://www.cplusplus.com/info/description/)
-* [GitLab](https://about.gitlab.com/), [GitHub](https://github.com/), [Jenkins](https://jenkins.io/)
+* [Java](https://www.geeksforgeeks.org/java/), [Go](https://golang.org/), [Rust](https://www.rust-lang.org/), [Bash](https://www.gnu.org/software/bash/), [Python](https://www.python.org/), [C++](http://www.cplusplus.com/info/description/)
+* [GitLab](https://about.gitlab.com/), [GitHub](https://github.com/), [Jenkins](https://jenkins.io/), [Git](https://git-scm.com/)
 * [Kubernetes](https://kubernetes.io/), [Kafka](https://kafka.apache.org/), [ZooKeeper](https://zookeeper.apache.org/), [Prometheus](https://prometheus.io/)
 * [Netty](https://netty.io/), [Spock](http://spockframework.org/), [Guava](https://opensource.google/projects/guava), [Dagger2](https://dagger.dev/)
 * [Certified Kubernetes Application Developer](https://www.youracclaim.com/badges/1fe71f91-3917-4ee3-b3f0-51c60a5a6c66),
