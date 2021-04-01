@@ -22,4 +22,4 @@
 [blog_shareThis]
     other = "Share this"
 [footer_text]
-    other = "Built using [Hugo](http://gohugo.io/) and hosted on-premise. Powered by <i class=\"fa fa-coffee\"></i> but forked from [Introduction](https://github.com/victoriadrake/hugo-theme-introduction)"
+    other = "Built using [**Hugo**](http://gohugo.io/) and hosted on-premise. Powered by <i class=\"fa fa-coffee\"></i> and mostly [**this source code**](https://github.com/scott-kirk/scottkirk.dev)"
