@@ -3,7 +3,7 @@
 [404_description]
     other = "Oops! Either you've found a bug{{ with .Site.Params.email }} (in which case, [please tell me](mailto:{{ . }})) {{ end }} or you're just making things up. This page doesn't exist!"
 [index_experience_allExperience]
-    other = "All Experience"
+    other = "All Professional Experience"
 [index_projects_allProjects]
     other = "All Projects"
 [index_blog_latestPosts]
