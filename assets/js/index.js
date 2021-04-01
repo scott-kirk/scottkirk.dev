@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
+  $(".navbar-burger").on('click', function() {
 
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
       $(".navbar-burger").toggleClass("is-active");
@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
 });
 // Bitty scrolling links script
-$("a[href^=\"#\"]").click(function(e) {
+$("a[href^=\"#\"]").on('click', function(e) {
     e.preventDefault();
     $("html, body").animate({
         scrollTop: $(document.getElementById(this.hash.substr(1))).offset().top
