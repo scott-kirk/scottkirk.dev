@@ -27,7 +27,7 @@ the microwave heating my popcorn, to the video games I spent countless hours
 on. I wanted to have a part in building all of these things that I love. So I
 did, I constantly tinkered with things. I would try to download the source code
 for classic programs, like a calculator, and just toy with the code and see
-what I could make it do, how I could extend it or suit it to whatver I wanted. I took every software course I could in High School, and I knew exactly what kind of work I wanted to do in the world. When I started at the University of Virginia, Introduction to Programming was one of my favorite courses, and it felt amazing to be with so many others that also enjoyed programming.
+what I could make it do, how I could extend it or suit it to whatever I wanted. I took every software course I could in High School, and I knew exactly what kind of work I wanted to do in the world. When I started at the University of Virginia, Introduction to Programming was one of my favorite courses, and it felt amazing to be with so many others that also enjoyed programming.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the main facets of programming that drew
 me to the discipline was simply the flexibility of it. Through just a text
