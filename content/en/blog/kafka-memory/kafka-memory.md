@@ -70,11 +70,25 @@ unique idempotent producers being repeatedly created that are producing long-ter
 and permanently run out of memory. Since the brokers keep track of unique idempotent producers for as long as their
 data is retained, it's a simple but dangerous recipe to accidentally follow.
 
-<br>
 Now getting to this root cause was the interesting bit. While the problem itself was simple, finding it from just
 "The Kafka brokers have run out of memory" was not.
 
-<br><br>
-
 ## The Investigation
-To be continued
+The first step I always take in these scenarios is a quick look at some nice Grafana dashboards. The panels we had set up tracked request and network thread utilization, as well as some per-topic-partition health metrics. What was a wrinkle was that everything was green across the board, not a single issue according to the Kafka health dashboard.
+
+Without the aid of the dashboards, the next plan of action was to determine "what's changed in the software between last week and this week", with a focus on Kafka interactions. Thankfully the dashboards still had _some_ usefulness to them, as by increasing the timescale of the partition health panels we could see that the amount of tracked partitions had changed.
+
+Armed with the knowledge that the number of partitions had changed, the question was then "what were those new partitions, and could they be the root cause?". After sshing into the affected servers we were able to list out all the current topics in the cluster and noticed a new set of topics that corresponded to an experimental feature another team was developing. In parallel to this investigation, a heap dump was also performed on the Kafka brokers, revealing that the majority of the memory was from a list of idempotent producer ids.
+
+These two bits of information in hand led us to the producer code of the new experimental feature. From there we found that every single new producer record would spawn a new idempotent producer, and never close the previous. At this point we had enough information to try to reproduce this internally and prove the issue was the producer lifecycle.
+
+Sure enough, the two experiments that ran showed memory growth only when the idempotent producer was created per record. The fix was then trivial for the product code, the idempotent producer had to simply be a singleton that persisted between record produces. Interestingly, this change did _nothing_ to the memory usage of the Kafka brokers. With the help of the experiments it was actually shown that each new producer id is written to disk, like a data record would be. When a Kafka broker booted up it would then load the list of persisted producer ids into memory, thus inflating the broker memory usage once more.
+
+To actually lower the memory usage of the brokers the topics had to be manually trimmed, eliminating the data and producer ids from when there was a producer created per record. Finally with these two solutions, the singleton producer and topic trim, memory usage plummeted and then stabilized.
+
+## Lessons Learned
+The severity of the incident led to a fair amount of preventative actions ranging from development safeguards to additional deployment monitoring and alerting. The Kafka brokers were changed to perform an automatic heap dump upon exceeding their memory limits, and alerts were implements to more closely monitor their memory usage.
+
+Kafka topic counts were then also alerted on, since the Kafka ops team was caught off guard by the additional topics. This was simply done by alerting if the number of managed Kafka topics exceeded a constant baked into the alert definition. Furthermore, to better aid teams using Kafka for their features a new feature quality gate was added, which was a document designed to guide teams in their usage of Kafka.
+
+These changes served to better equip not just the Kafka team, but any team wanting to leverage Kafka. Everyone wants to write good software, and as owners of a service you have to provide the tools that will best empower others to use your service.
