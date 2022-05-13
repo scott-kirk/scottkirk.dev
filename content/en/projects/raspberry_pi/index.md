@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi"
-weight: 2
+weight: 3
 resources:
     - src: pi.png
       params:

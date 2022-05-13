@@ -1,6 +1,6 @@
 ---
 title: "Autoscale Server"
-weight: 3
+weight: 2
 resources:
     - src: mc.png
       params:

@@ -1,6 +1,11 @@
 baseURL                          = "https://scottkirk.dev/" # Your domain name. Must end with "/"
 DefaultContentLanguage           = "en"                     # Default language for multilingual sites
 
+[module]
+[[module.mounts]]
+  source = 'game/pkg'
+  target = 'static/game'
+
 [markup.goldmark.renderer]
   unsafe= true
 
