@@ -18,7 +18,7 @@ canvas {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 400px;
+    width: 500px;
 }
 </style>
 </head>
@@ -31,7 +31,7 @@ canvas {
     const GRID_COLOR = "#CCCCCC";
     const DEAD_COLOR = "#FFFFFF";
     const ALIVE_COLOR = "#000000";
-    const universe = Universe.new();
+    const universe = Universe.new(100, 100);
     const width = universe.width();
     const height = universe.height();
     const canvas = document.getElementById("game-canvas");
