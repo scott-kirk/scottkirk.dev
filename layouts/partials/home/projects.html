@@ -13,8 +13,8 @@
                 {{ $columWidth := "is-one-third" }}
                 <div class="column {{ $columWidth }}">
                     <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by2">
+                        <div class="card-image has-text-centered">
+                            <figure class="image is-128x128 is-inline-block">
                                 <a href="{{ .Permalink }}" >
                                     {{ with .Resources.ByType "image" }}
                               	    {{ range first 1 (sort . "Params.weight") }}
@@ -41,9 +41,6 @@
         </div>
         {{ end }}
     </div>
-    </div>
-    <div class="container has-text-centered top-pad">
-      <a href="{{ .Permalink }}">{{ i18n "index_projects_allProjects" . }}</a>
     </div>
     {{ partial "top-icon.html" . }}
 </div>
