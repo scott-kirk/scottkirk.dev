@@ -12,18 +12,17 @@ A simple [WebAssembly](https://webassembly.org/) proof of concept written in Rus
 <head>
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
 <style>
-canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 600px;
+.canvas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>
 </head>
 <body>
-<canvas id="game-canvas"></canvas>
+<div class="canvas-container">
+    <canvas id="game-canvas"></canvas>
+</div>
 <script type="module">
     import init, { Universe, Cell } from '/game/game.js';
     const wasm = await init();
