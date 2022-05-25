@@ -5,6 +5,12 @@ DefaultContentLanguage           = "en"                     # Default language f
 [[module.mounts]]
   source = 'game/pkg'
   target = 'static/game'
+[[module.mounts]]
+  source = "static/fonts"
+  target = "static/fonts"
+[[module.mounts]]
+  source = "static/scripts"
+  target = "static/scripts"
 
 [markup.goldmark.renderer]
   unsafe= true
@@ -17,7 +23,7 @@ DefaultContentLanguage           = "en"                     # Default language f
     fadeInIndex                  = true                   # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
     dateFormat                   = "Jan 2, 2006"
     email                        = "scottkirk@scottkirk.dev" # E-mail address for contact section
-    # customCSS                    = ["foo.css"]             # Include custom css files placed under assets/
+    customCSS                    = ["center-container.css"]  # Include custom css files placed under assets/
 
     # Configure the home page
     [params.home]
